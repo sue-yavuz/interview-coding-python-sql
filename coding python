@@ -105,5 +105,25 @@ def row_sum_odd_numbers(n):
 
 
 6############################################################################################# 
+Is a number prime?
+Define a function that takes an integer argument and returns a logical value true or false depending on if the integer is a prime.
+Per Wikipedia, a prime number ( or a prime ) is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+
+
+def is_prime(num):
+    if num > 0:
+        counter = 0
+        for i in range(1, num+1):
+            if num % i == 0:
+                counter += 1
+
+        if (num == 0) or (num == 1) or (counter >= 3):
+            return False
+
+        else:
+
+            return True
+    else:
+        return False
 
 
