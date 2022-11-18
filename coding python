@@ -154,7 +154,7 @@ if __name__ == '__main__':
               for k in range(z+1) if n!= sum([i,j,k])])
               
 8############################################################################################# 
-Fizz Buzz
+Fizz Buzz --> Codewars
 Return an array containing the numbers from 1 to N, where N is the parametered value.
 Replace certain values however if any of the following conditions are met:
 
@@ -167,12 +167,12 @@ N will never be less than 1.
 def fizzbuzz(n):
     list1=[]
     for i in range(1,n+1):
-        if i%3==0:
+        if i%3==0 and i%5==0:
+            list1.append('FizzBuzz')
+        elif i%3==0:
             list1.append('Fizz')
         elif i%5==0:
             list1.append('Buzz')
-        elif i%3==0 and i%5==0:
-            list1.append('FizzBuzz')
         else:
             list1.append(i)
     return list1
