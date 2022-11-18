@@ -178,3 +178,22 @@ def fizzbuzz(n):
     return list1
 
 9############################################################################################# 
+Nested Lists
+Given the names and grades for each student in a class of N students, store them in a nested list and print the name(s) of any student(s) 
+having the second lowest grade.
+Note: If there are multiple students with the second lowest grade, order their names alphabetically and print each name on a new line.
+
+if __name__ == '__main__':
+    dict1={}
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        dict1[name]= score
+
+    mini= min(dict1.values())
+    dict2={k:v for k,v in dict1.items() if v!=mini}
+
+    mini= min(dict2.values())
+    dict3={k:v for k,v in dict2.items() if v==mini}
+
+    print(*sorted(dict3.keys()), sep='\n')
