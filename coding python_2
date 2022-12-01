@@ -34,4 +34,28 @@ def find_it(seq):
          
     return None
 3######################################################################################
+Find the Runner-Up Score! --> HackerRank
+1.way
+n = int(input())
+arr = map(int, input().split())
 
+    list_arr= list(set((arr))) 
+    maxi = max(list_arr)
+    for i in list_arr:
+        if i == maxi:
+            list_arr.remove(i)
+        #print(list_arr)
+    #runner_up = max(list_arr)
+    print(max(list_arr))
+    
+2.way
+if __name__ == '__main__':
+    n = int(input())
+    arr = [*map(int, input().split())]
+    
+    # num = max(arr)
+    # while num in arr:
+    #     arr.remove(num)
+    
+    # print(max(arr)
+4######################################################################################
