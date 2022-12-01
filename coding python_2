@@ -71,3 +71,14 @@ if __name__ == '__main__':
     result = sum(student_marks[query_name])/len(student_marks[query_name])
     print(f'{result:.2f}')
 5######################################################################################
+Write a query to find the top 2 power users who sent the most messages on Microsoft Teams in August 2022. 
+Display the IDs of these 2 users along with the total number of messages they sent. 
+Output the results in descending count of the messages. ----->DataLemur
+
+SELECT sender_id, COUNT(*) as count
+FROM messages
+WHERE  EXTRACT(YEAR FROM sent_date) = '2022' AND EXTRACT(MONTH FROM sent_date) = '8'
+GROUP BY sender_id
+order by count desc
+fetch first 2 rows only;
+6######################################################################################
