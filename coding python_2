@@ -32,7 +32,7 @@ def find_it(seq):
         if seq.count(i)%2==1:
             return i
          
-    return None
+    return None    
 3######################################################################################
 Find the Runner-Up Score! --> HackerRank
 1.way
@@ -82,3 +82,15 @@ GROUP BY sender_id
 order by count desc
 fetch first 2 rows only;
 6######################################################################################
+SQL Basics: Simple NULL handling --> codewars
+https://www.codewars.com/kata/5811315e04adbbdb5000050e/train/sql
+
+SELECT 
+id,
+COALESCE(NULLIF(name, ''), '[product name not found]') as name,
+price,
+COALESCE(NULLIF(card_name, ''), '[product name not found]') as card_name,
+card_number,
+transaction_date
+FROM  eusales
+WHERE price IS NOT NULL AND price >=50;
