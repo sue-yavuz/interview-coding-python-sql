@@ -94,3 +94,8 @@ card_number,
 transaction_date
 FROM  eusales
 WHERE price IS not NULL and price >=50;
+7#####################################################################################
+
+
+
+
