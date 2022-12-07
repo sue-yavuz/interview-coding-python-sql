@@ -34,5 +34,6 @@ where city like '%[a,e,i,o,u]' and city like '[a,e,i,o,u]%';
 7####################################################################################
 Weather Observation Station 9
 
-
+select distinct city from station
+where city  not like '[a,e,i,o,u]%';
 8####################################################################################
