@@ -1,7 +1,7 @@
 1####################################################################################
 Weather Observation Station 3 --> HackerRank
 
-select distinct(CITY) from STATION where Mod(ID,2)=0 group by CITY;
+select distinct(CITY) from STATION where Mod(ID,2)=0;
 2####################################################################################
 
 
