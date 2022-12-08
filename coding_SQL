@@ -41,11 +41,11 @@ Weather Observation Station 10 --> HackerRank
 
 select distinct city from station 
 where city not like '%[aeiuo]';
-####################################################################################
+9####################################################################################
 Weather Observation Station 11 --> HackerRank
 select distinct city from station 
 where city not like '%[aeiuo]' or city not like '[aeiuo]%' ;
-####################################################################################
+10####################################################################################
 Weather Observation Station 12 --> HackerRank
 select distinct city from station 
 where city not like '%[aeiuo]' and city not like '[aeiuo]%';
@@ -59,53 +59,3 @@ order by right(name,3), id;
 select name from students
 where marks >75
 order by substring(name, len(name)-2,3) ,id;
-####################################################################################
-Employee Names --> HackerRank
-select name from employee
-order by name;
-####################################################################################
-Employee Salaries --> HackerRank
-select name from employee
-where salary > 2000 and months < 10
-order by employee_id;
-####################################################################################
-Type of Triangle --> HackerRank
-SELECT  
-    CASE
-        WHEN A + B <= C or a + c <= b or b + c <= a THEN 'Not A Triangle'
-        WHEN a = b and b = c THEN 'Equilateral'
-        WHEN a = b OR b = c or a = c THEN 'Isosceles'
-        ELSE 'Scalene'
-    END 
-FROM triangles;
-####################################################################################
-The PADS --> HackerRank
-select name + '(' + left(occupation,1) + ')' from OCCUPATIONS
-order by name
-select 'There are a total of ' + str(count(*))+ " "+ lower(occupation) + 's.' from OCCUPATIONS
-group by occupation
-order by count(*);
-
-####################################################################################
-Occupations --> HackerRank
-select
-    Doctor,
-    Professor,
-    Singer,
-    Actor
-from (
-    select
-        NameOrder,
-        max(case Occupation when 'Doctor' then Name end) as Doctor,
-        max(case Occupation when 'Professor' then Name end) as Professor,
-        max(case Occupation when 'Singer' then Name end) as Singer,
-        max(case Occupation when 'Actor' then Name end) as Actor
-    from (
-            select
-                Occupation,
-                Name,
-                row_number() over(partition by Occupation order by Name ASC) as NameOrder
-            from Occupations
-         ) as NameLists
-    group by NameOrder
-    ) as Names
