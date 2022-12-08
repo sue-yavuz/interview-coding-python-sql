@@ -41,11 +41,11 @@ where city  not like '[a,e,i,o,u]%';
 
 select distinct city from station 
 where city not like '%[aeiuo]';
-
+####################################################################################
 11
 select distinct city from station 
 where city not like '%[aeiuo]' or city not like '[aeiuo]%' ;
-
+####################################################################################
 12
 select distinct city from station 
 where city not like '%[aeiuo]' and city not like '[aeiuo]%';
@@ -59,3 +59,13 @@ order by right(name,3), id;
 select name from students
 where marks >75
 order by substring(name, len(name)-2,3) ,id;
+####################################################################################
+Employee Names
+select name from employee
+order by name;
+####################################################################################
+Employee Salaries
+select name from employee
+where salary > 2000 and months < 10
+order by employee_id;
+####################################################################################
