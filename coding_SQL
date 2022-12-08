@@ -60,16 +60,16 @@ select name from students
 where marks >75
 order by substring(name, len(name)-2,3) ,id;
 ####################################################################################
-Employee Names
+Employee Names --> HackerRank
 select name from employee
 order by name;
 ####################################################################################
-Employee Salaries
+Employee Salaries --> HackerRank
 select name from employee
 where salary > 2000 and months < 10
 order by employee_id;
 ####################################################################################
-Type of Triangle
+Type of Triangle --> HackerRank
 SELECT  
     CASE
         WHEN A + B <= C or a + c <= b or b + c <= a THEN 'Not A Triangle'
@@ -79,7 +79,7 @@ SELECT
     END 
 FROM triangles;
 ####################################################################################
-The PADS
+The PADS --> HackerRank
 select name + '(' + left(occupation,1) + ')' from OCCUPATIONS
 order by name
 select 'There are a total of ' + str(count(*))+ " "+ lower(occupation) + 's.' from OCCUPATIONS
@@ -87,7 +87,7 @@ group by occupation
 order by count(*);
 
 ####################################################################################
-Occupations
+Occupations --> HackerRank
 select
     Doctor,
     Professor,
