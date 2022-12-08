@@ -3,10 +3,10 @@ Weather Observation Station 3 --> HackerRank
 
 select distinct(CITY) from STATION where Mod(ID,2)=0;
 2####################################################################################
-Weather Observation Station 4
+Weather Observation Station 4 --> HackerRank
 select count(city)-count(distinct(city)) from station; 
 3####################################################################################
-Weather Observation Station 5
+Weather Observation Station 5 --> HackerRank
 
 select top 1 city, len(city)
 from station
@@ -17,7 +17,7 @@ from station
 order by len(city) desc
 ;
 4####################################################################################
-Weather Observation Station 6
+Weather Observation Station 6 --> HackerRank
 
 select distinct city from station
 where city like '[a,e,i,o,u]%';
