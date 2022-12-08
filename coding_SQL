@@ -37,3 +37,25 @@ Weather Observation Station 9
 select distinct city from station
 where city  not like '[a,e,i,o,u]%';
 8####################################################################################
+10
+
+select distinct city from station 
+where city not like '%[aeiuo]';
+
+11
+select distinct city from station 
+where city not like '%[aeiuo]' or city not like '[aeiuo]%' ;
+
+12
+select distinct city from station 
+where city not like '%[aeiuo]' and city not like '[aeiuo]%';
+
+Higher Than 75 Marks
+select name from students
+where marks >75
+order by right(name,3), id;
+
+2.way
+select name from students
+where marks >75
+order by substring(name, len(name)-2,3) ,id;
