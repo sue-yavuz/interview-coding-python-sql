@@ -22,17 +22,17 @@ Weather Observation Station 6 --> HackerRank
 select distinct city from station
 where city like '[a,e,i,o,u]%';
 5####################################################################################
-Weather Observation Station 7
+Weather Observation Station 7 --> HackerRank
 
 select distinct city from station
 where city like '%[a,e,i,o,u]';
 6####################################################################################
-Weather Observation Station 8
+Weather Observation Station 8 --> HackerRank
 
 select distinct city from station
 where city like '%[a,e,i,o,u]' and city like '[a,e,i,o,u]%';
 7####################################################################################
-Weather Observation Station 9
+Weather Observation Station 9 --> HackerRank
 
 select distinct city from station
 where city  not like '[a,e,i,o,u]%';
