@@ -104,10 +104,27 @@ if __name__ == '__main__':
     result = swap_case(s)
     print(result)
 8#####################################################################################
+String Split and Join --> HackerRank
 
+def split_and_join(line):
+    word = line.split()
+    return '-'.join(word)
+    # write your code here
 
+if __name__ == '__main__':
+    line = input()
+    result = split_and_join(line)
+    print(result)
 9#####################################################################################
+What's Your Name? --> HackerRank
+def print_full_name(first, last):
+    print( f'Hello {first} {last}! You just delved into python.')
+    # Write your code here
 
+if __name__ == '__main__':
+    first_name = input()
+    last_name = input()
+    print_full_name(first_name, last_name)
 10#####################################################################################
 
 
