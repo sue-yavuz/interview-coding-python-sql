@@ -48,8 +48,17 @@ from (
          ) as NameLists
     group by NameOrder
     ) as Names1
-    6####################################################################################
-
+  
+6####################################################################################
+Binary Tree Nodes --> HackerRank
+select N,
+    case
+    when p is null then "Root"
+    when n in (select p from bst) then "Inner"
+    else "Leaf"
+    end
+from BST
+order by 1;
 
     7####################################################################################
 
