@@ -71,7 +71,7 @@ SELECT COMPANY_CODE, FOUNDER,
 FROM COMPANY C
 ORDER BY 1;
 
-    8####################################################################################
+8####################################################################################
 Revising Aggregations -  The Count Function --> HackerRank
 
 select count(name)
