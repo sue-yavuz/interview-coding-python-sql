@@ -127,8 +127,15 @@ if __name__ == '__main__':
     last_name = input()
     print_full_name(first_name, last_name)
 10#####################################################################################
+Replace With Alphabet Position --> CODEWARS
 
-
+def alphabet_position(text):
+    import string
+    lower = string.ascii_lowercase
+    
+    text = [t.lower() for t in text if t.isalpha()]
+    text = [lower.index(i)+1 for i in text]
+    return ' '.join(map(str, text)) 
 
 
 
