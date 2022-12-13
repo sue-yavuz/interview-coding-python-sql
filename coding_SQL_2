@@ -72,7 +72,11 @@ FROM COMPANY C
 ORDER BY 1;
 
     8####################################################################################
+Revising Aggregations -  The Count Function --> HackerRank
 
+select count(name)
+from city
+where population > 100000;
 
     9####################################################################################
 
