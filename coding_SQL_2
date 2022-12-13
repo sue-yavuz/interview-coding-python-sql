@@ -78,7 +78,7 @@ select count(name)
 from city
 where population > 100000;
 
-    9####################################################################################
+9####################################################################################
 Revising Aggregations - The Sum Function --> HackerRank
 1.way
 SELECT DISTINCT SUM(population) OVER ()
@@ -92,5 +92,10 @@ group by district
 having district like 'California';
 
     10####################################################################################
-    
+Revising Aggregations - Averages --> HackerRank
+
+select avg(population)
+from city
+group by district
+having district like 'California';    
     ####################################################################################
