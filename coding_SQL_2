@@ -79,7 +79,17 @@ from city
 where population > 100000;
 
     9####################################################################################
+Revising Aggregations - The Sum Function --> HackerRank
+1.way
+SELECT DISTINCT SUM(population) OVER ()
+FROM city 
+WHERE district like 'California';
 
+2.way
+select sum(population)
+from city
+group by district
+having district like 'California';
 
     10####################################################################################
     
