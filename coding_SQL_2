@@ -92,10 +92,15 @@ group by district
 having district like 'California';
 
     10####################################################################################
-Revising Aggregations - Averages --> HackerRank
+--Revising Aggregations - Averages --> HackerRank
 
 select avg(population)
 from city
 group by district
 having district like 'California';    
     ####################################################################################
+--Average Population --> HackerRank
+
+select floor(avg(population))
+from city;
+
