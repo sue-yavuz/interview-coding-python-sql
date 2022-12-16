@@ -113,3 +113,7 @@ where COUNTRYCODE = "JPN";
 
 Population Density Difference --> HAckerRank
 select max(population)-min(population) from city;
+
+SQLAggregationThe Blunder --> HACKERRANK
+SELECT CEIL(AVG(SALARY) - AVG(REPLACE(SALARY, '0', '')))
+FROM EMPLOYEES;
