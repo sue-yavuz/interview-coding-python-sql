@@ -127,3 +127,9 @@ from Employee where (months * salary)
 Weather Observation Station 2 Exit Full Screen View
 SELECT ROUND(SUM(LAT_N),2), ROUND(SUM(LONG_W),2)
 FROM STATION;
+
+Weather Observation Station 13  -->HACKERRANK
+SELECT 
+    CAST(SUM(LAT_N) AS NUMERIC(20,4))
+FROM STATION 
+WHERE LAT_N BETWEEN 38.7880 AND 137.2345;
