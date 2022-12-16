@@ -123,3 +123,7 @@ SQL Aggregation Top Earners -->HACKERRANK
 select max(months * salary), count(months * salary) 
 from Employee where (months * salary) 
 = (select max(months * salary) from Employee);
+
+Weather Observation Station 2 Exit Full Screen View
+SELECT ROUND(SUM(LAT_N),2), ROUND(SUM(LONG_W),2)
+FROM STATION;
