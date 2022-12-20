@@ -24,3 +24,10 @@ if __name__ == '__main__':
     print(any(i.isdigit() for i in s))
     print(any(i.islower() for i in s))
     print(any(i.isupper() for i in s))
+#################################################################################
+Find the unique number -->CodeWars
+def find_uniq(arr):
+    # your code here
+    for i in set(arr):
+        if arr.count(i)==1:
+            return i
