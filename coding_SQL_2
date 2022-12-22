@@ -133,3 +133,13 @@ SELECT
     CAST(SUM(LAT_N) AS NUMERIC(20,4))
 FROM STATION 
 WHERE LAT_N BETWEEN 38.7880 AND 137.2345;
+
+#######################################################
+Weather Observation Station 20 -->Hacker Rank
+SELECT TOP 1 cast(lat_n as numeric(13,4)) from
+(
+    SELECT TOP 50 PERCENT lat_n 
+    FROM station 
+    ORDER BY  lat_n
+)station
+ORDER BY lat_n DESC
