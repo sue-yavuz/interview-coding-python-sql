@@ -31,3 +31,13 @@ def find_uniq(arr):
     for i in set(arr):
         if arr.count(i)==1:
             return i
+#######################################################################
+Two Sum--> LettCode
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        for i in nums:
+            for j in nums[1::]:
+                if i+j==target:
+                    x = nums.index(i)
+                    y = nums.index(j,x+1)
+                    return [x,y]
