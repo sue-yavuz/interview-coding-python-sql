@@ -14,7 +14,7 @@ if __name__ == '__main__':
     
     count = count_substring(string, sub_string)
     print(count)
-1###########################################################################
+2###########################################################################
 String Validators --> HackerRank
 
 if __name__ == '__main__':
@@ -24,14 +24,14 @@ if __name__ == '__main__':
     print(any(i.isdigit() for i in s))
     print(any(i.islower() for i in s))
     print(any(i.isupper() for i in s))
-#################################################################################
+3#################################################################################
 Find the unique number -->CodeWars
 def find_uniq(arr):
     # your code here
     for i in set(arr):
         if arr.count(i)==1:
             return i
-#######################################################################
+4#######################################################################
 Two Sum--> LettCode
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
