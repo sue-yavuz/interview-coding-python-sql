@@ -41,3 +41,15 @@ class Solution:
                     x = nums.index(i)
                     y = nums.index(j,x+1)
                     return [x,y]
+                    
+5######################################################################
+Human Readable Time -->CodeWars
+1.way
+def make_readable(seconds):
+    h = seconds // 3600
+    m = (seconds - h * 3600) // 60
+    s = seconds - (h * 3600) - (m * 60)
+    return f"{h:0>2d}:{m:0>2d}:{s:0>2d}"
+2.way
+def make_readable(seconds):
+    return '{:02}:{:02}:{:02}'.format(seconds // 3600, seconds // 60 % 60, seconds % 60)
