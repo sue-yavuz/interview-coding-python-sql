@@ -143,3 +143,12 @@ SELECT TOP 1 cast(lat_n as numeric(13,4)) from
     ORDER BY  lat_n
 )station
 ORDER BY lat_n DESC
+
+
+#######################################################
+Weather Observation Station 14
+select round(LAT_N,4)
+from station 
+where lat_n<137.2345
+order by 1 desc
+limit 1;
