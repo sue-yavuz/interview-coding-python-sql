@@ -55,3 +55,22 @@ def make_readable(seconds):
     return '{:02}:{:02}:{:02}'.format(seconds // 3600, seconds // 60 % 60, seconds % 60)
     
 6######################################################################    
+Most frequently used words in a text --> CodeWars
+def top_3_words(text):
+    import string, re 
+    punc = string.punctuation.replace("'", "")
+    
+    text = text.lower()
+    text = re.sub(f'[{punc}]', ' ', text)
+    words = text.split()
+    
+    if all(i.replace("'", "")=='' for i in words ):
+        return []
+    
+    d = {}
+    for i in words:
+        d[i]  = words.count(i)
+
+    d = dict(sorted(d.items(), key=lambda x: x[1], reverse=True))
+    
+    return list(d.keys())[:3]
