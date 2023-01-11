@@ -164,3 +164,11 @@ SELECT TOP 1 CAST(LAT_N AS NUMERIC(10,4))
 FROM STATION 
 WHERE LAT_N > 38.7780
 ORDER BY LAT_N;
+#######################################################
+Weather Observation Station 17
+SELECT TOP 1 CAST(LONG_W AS NUMERIC(10,4))
+FROM STATION 
+WHERE LAT_N > 38.7780
+ORDER BY LAT_N;
+#######################################################
+Weather Observation Station 18
