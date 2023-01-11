@@ -152,3 +152,11 @@ from station
 where lat_n<137.2345
 order by 1 desc
 limit 1;
+#######################################################
+Weather Observation Station 15
+SELECT TOP 1 CAST(LONG_W AS NUMERIC(10,4))
+FROM STATION 
+WHERE LAT_N < 137.2345
+ORDER BY LAT_N DESC;
+#######################################################
+Weather Observation Station 16
