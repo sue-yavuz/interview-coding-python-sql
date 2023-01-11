@@ -176,3 +176,7 @@ SELECT CAST(ABS(MIN(LAT_N)-MAX(LAT_N))+ABS(MIN(LONG_W)-MAX(LONG_W))AS NUMERIC(10
 FROM STATION; 
 #######################################################
 Weather Observation Station 19
+SELECT CAST(SQRT(SQUARE(MIN(LAT_N)-MAX(LAT_N))+SQUARE(MIN(LONG_W)-MAX(LONG_W)))AS NUMERIC(10,4))
+FROM STATION;
+#######################################################
+Weather Observation Station 20
