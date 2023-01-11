@@ -172,3 +172,7 @@ WHERE LAT_N > 38.7780
 ORDER BY LAT_N;
 #######################################################
 Weather Observation Station 18
+SELECT CAST(ABS(MIN(LAT_N)-MAX(LAT_N))+ABS(MIN(LONG_W)-MAX(LONG_W))AS NUMERIC(10,4))
+FROM STATION; 
+#######################################################
+Weather Observation Station 19
