@@ -7,7 +7,7 @@ Employee Salaries --> HackerRank
 select name from employee
 where salary > 2000 and months < 10
 order by employee_id;
-3####################################################################################
+3#################################################################################################
 Type of Triangle --> HackerRank
 SELECT  
     CASE
