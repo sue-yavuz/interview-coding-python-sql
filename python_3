@@ -74,3 +74,31 @@ def top_3_words(text):
     d = dict(sorted(d.items(), key=lambda x: x[1], reverse=True))
     
     return list(d.keys())[:3]
+    
+######################################################################     
+14. Longest Common Prefix --> Leetcode    
+class Solution:
+    def longestCommonPrefix(self, strs: List[str]) -> str:
+        prefix = ""
+        first = strs[0]
+
+        if len(strs)==1:
+            return strs[0]
+     
+        if not first.isalpha():
+            return prefix     
+
+
+        for i in range(len(first)+1):
+            check = first[:i]
+            for cur in strs[1:]:
+
+                if cur.startswith(check):
+
+                    continue
+                else:
+                    return prefix
+                    
+            prefix = check
+
+        return prefix
