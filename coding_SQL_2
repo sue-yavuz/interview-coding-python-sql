@@ -190,3 +190,8 @@ FROM    (SELECT  TOP 50 PERCENT CAST(LAT_N AS NUMERIC(10, 4)) AS LAT_N
 SELECT NAME,POPULATION, AREA 
 FROM WORLD
 WHERE (AREA >= 3000000) OR (POPULATION >= 25000000);        
+###################################################################################################
+1757. Recyclable and Low Fat Products ---> LEETCODE
+SELECT PRODUCT_ID
+FROM PRODUCTS 
+WHERE (LOW_FATS = 'Y') AND (RECYCLABLE = 'Y');
