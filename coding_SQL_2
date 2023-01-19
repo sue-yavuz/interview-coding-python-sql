@@ -201,3 +201,10 @@ WHERE (LOW_FATS = 'Y') AND (RECYCLABLE = 'Y');
 SELECT NAME
 FROM CUSTOMER 
 WHERE NOT REFEREE_ID = 2 or REFEREE_ID IS NULL;
+###################################################################################################
+183. Customers Who Never Order ---> LEETCODE
+SELECT NAME AS CUSTOMERS 
+FROM CUSTOMERS C
+LEFT JOIN ORDERS O
+    ON C.ID = O.CUSTOMERID
+WHERE O.ID IS NULL;
