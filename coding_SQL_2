@@ -195,3 +195,9 @@ WHERE (AREA >= 3000000) OR (POPULATION >= 25000000);
 SELECT PRODUCT_ID
 FROM PRODUCTS 
 WHERE (LOW_FATS = 'Y') AND (RECYCLABLE = 'Y');
+
+###################################################################################################
+584. Find Customer Referee ---> LEETCODE
+SELECT NAME
+FROM CUSTOMER 
+WHERE NOT REFEREE_ID = 2 or REFEREE_ID IS NULL;
