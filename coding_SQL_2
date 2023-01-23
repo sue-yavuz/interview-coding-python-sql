@@ -208,3 +208,10 @@ FROM CUSTOMERS C
 LEFT JOIN ORDERS O
     ON C.ID = O.CUSTOMERID
 WHERE O.ID IS NULL;
+###################################################################################################
+Population Census ---> LEETCODE
+SELECT SUM(CI.POPULATION)
+FROM CITY CI 
+LEFT JOIN COUNTRY CO
+    ON CI.COUNTRYCODE = CO.CODE
+WHERE CO.CONTINENT='ASIA';
