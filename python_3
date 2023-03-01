@@ -105,10 +105,11 @@ class Solution:
 ######################################################################            
  itertools.product()  ------>Hackerrank     
         
-  from itertools import product
-A = map(int, input().split())
-B = map(int, input().split())
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import product
 
+A = list(map(int, input().split()))
+B = list(map(int, input().split()))
 
-# print(*((x,y) for x in A for y in B))
-print(*product(A, B))      
+print(*product(A, B))
+# print(*((x,y) for x in A for y in B))      
