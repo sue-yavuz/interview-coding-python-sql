@@ -113,3 +113,38 @@ B = list(map(int, input().split()))
 
 print(*product(A, B))
 # print(*((x,y) for x in A for y in B))      
+
+
+
+######################################################################
+itertools.permutations() -------->Hackerrank
+
+1.way
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import permutations
+
+inp = input().split()
+msg = inp[0]
+num = int(inp[1])
+
+# print(msg, num)
+
+result = list(permutations(msg, num))
+result = sorted(map(''.join, result))
+
+print(*result, sep='\n')
+
+2.way
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import permutations
+a = input().split()
+msg = a[0]
+num = int(a[1])
+
+result = list(permutations(msg,num))
+list1=[]
+for i in result:
+    list1.append("".join(i))
+    
+for i in sorted(list1):   
+    print(i)
