@@ -102,3 +102,13 @@ class Solution:
             prefix = check
 
         return prefix
+######################################################################            
+ itertools.product()  ------>Hackerrank     
+        
+  from itertools import product
+A = map(int, input().split())
+B = map(int, input().split())
+
+
+# print(*((x,y) for x in A for y in B))
+print(*product(A, B))      
